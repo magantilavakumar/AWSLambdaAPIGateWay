@@ -18,10 +18,10 @@ public class PersonDetailsConfig {
 
 	
 	
-	static final String AWS_IAM_ACCESS_KEY = "AKIAURSKXB3SWAKALGPF";
-    static final String AWS_IAM_SECRET_ACCESS_KEY = "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";
+	static final String AWS_IAM_ACCESS_KEY = "";
+    static final String AWS_IAM_SECRET_ACCESS_KEY = "";
     static final String AWS_REGION = "u-east-1"; //for example "eu-west-1"
-    static final String AWS_API_GATEWAY_ENPOINT = "https://nbic0gtqx4.execute-api.us-east-1.amazonaws.com/Dev"; //for example https://234n34k5678k.execute-api.eu-west-1.amazonaws.com/TEST
+    static final String AWS_API_GATEWAY_ENPOINT = ""; //for example https://234n34k5678k.execute-api.eu-west-1.amazonaws.com/TEST
 	
     static final String exampleJsonRequest = "\"\"";
     
