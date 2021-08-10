@@ -35,7 +35,8 @@ public class JsonApiGatewayCaller extends AmazonWebServiceClient {
     private final AWS4Signer signer;
 
     private final JsonResponseHandler<ApiGatewayResponse> responseHandler;
-    private final JsonErrorResponseHandler errorResponseHandler;
+   
+	private final JsonErrorResponseHandler errorResponseHandler;
 
     public JsonApiGatewayCaller(String accessKey, String secretAccessKey, String apiKey, String region, URI endpoint) {
 
@@ -90,5 +91,14 @@ public class JsonApiGatewayCaller extends AmazonWebServiceClient {
         executionContext.setCredentialsProvider(credentials);
         return executionContext;
     }
+    
+    public JsonResponseHandler<ApiGatewayResponse> getResponseHandler() {
+		return responseHandler;
+	}
+
+	public JsonErrorResponseHandler getErrorResponseHandler() {
+		return errorResponseHandler;
+	}
+
 
 }
